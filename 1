@@ -1,11 +1,12 @@
-public class Main {
-public static void main(String[] args) {
-    int[] marks = {5, 3, 5, 3, 4, 4, 3, 2, 5, 4};
-    int sum = 0;
-    for(int i=0;i<10;i++) {
-        sum += marks[i];
+public class Sasha {
+    public static void main(String[] args) {
+        int[] marks = {5, 3, 5, 3, 4, 4, 3, 2, 5, 4};
+        int sum = 0, sr =0;
+        for(int i=0;i<10;i++) {
+            sum += marks[i];
+        }
+        sr = sum/10;
+        System.out.printf("Summa: %s\nSrednee arifmeticheskoe: %s",sum, sr);
     }
-    System.out.println(sum);
-    }
-    
+
 }
