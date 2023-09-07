@@ -1,0 +1,23 @@
+import java.util.Scanner;
+public class Sasha {
+    public static void main(String[] args) {
+        System.out.printf("vvedite dlinu massiva: ");
+        Scanner in = new Scanner(System.in);
+        int n = in.nextInt();
+        int[] mass;
+        mass = new int[n];
+        int max = 0,min = 0, i = 0, sum = 0;
+        while(i<n) {
+            Scanner in1 = new Scanner(System.in);
+            mass[i]= in1.nextInt();
+            sum+=mass[i];
+            if (mass[i]>max) {
+                max = mass[i];
+            }
+            if (mass[i]<min) {
+                min = mass[i];
+            }
+            i++;
+        }
+        System.out.printf("summa: %s\nmaks chislo: %s\nmin chislo: %s", sum, max, min);
+    }
