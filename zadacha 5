@@ -1,0 +1,18 @@
+import java.util.Scanner;
+
+public class Sasha {
+    public static int factorial(int a){
+        if (a==1){
+            return a;
+        }
+        else{
+            return factorial(a-1)*a;
+        }
+    }
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+        System.out.printf("vvedite chislo: ");
+        int a = sc.nextInt();
+        System.out.printf("factorial chisla %s: %s", a, factorial(a));
+    }
+}
